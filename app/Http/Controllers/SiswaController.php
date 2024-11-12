@@ -23,7 +23,7 @@ class SiswaController extends Controller
         $validatedData = $request->validate([
             'nama' => 'required|string|max:255',
             'kelas' => 'required|string',
-            'umur' => 'required|integer|between:6,18',
+            'umur' => 'required|integer',
         ]);
     
         try {
